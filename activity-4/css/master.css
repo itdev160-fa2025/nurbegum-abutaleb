@@ -1,11 +1,13 @@
 body {
     font-family: "Open Sans", sans-serif;
     color:brown;
+    background-color: beige;
 }
 
 h1 {
     color:brown;
     background-color: beige;
+    text-align: center;
 }
 
 img {
@@ -20,6 +22,8 @@ figcaption span {
 p#product-description {
     margin: 20px 0 20px 0;
     text-align: justify;
+    background-color: beige;
+    font-family: sans-serif;
 }
 
 div.review {
