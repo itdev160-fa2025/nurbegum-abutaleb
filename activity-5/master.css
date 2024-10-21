@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+    color:darkgreen;
+    background-color: beige;
+    margin: 0%;  
+  }
+  
+  header {
+      background-color:blanchedalmond;
+      color:darkgreen;
+      text-align: left;
+      font-weight: 700;
+      width: 85%;
+      margin: 0 auto;
+  }
+  
+  main {
+      width: 90%;
+      margin: 0 auto;
+      background-color:bisque;
+  }
+  
+  section {
+      padding: 1.5em;
+  }
+  
+  h1 {
+      padding-top: 1.5%;
+      color:antiquewhite;
+      background-color: cadetblue;
+      text-align: center;
+  }
+  
+  h2 {
+      text-align: left;
+      color:antiquewhite;
+      background-color:cadetblue;
+  }
+  
+  footer {
+      background-color:darkgreen;
+      color:beige;
+      height: 2em;
+      width: 90%;
+      margin: 0 auto;
+  }
