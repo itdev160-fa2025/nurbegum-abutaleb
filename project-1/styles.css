@@ -1,0 +1,48 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:burlywood;
+    margin: 0;
+    padding: 0 20px;
+}
+
+#maim-title {
+    color:brown;
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color:brown;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    width: 30px;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color:burlywood;
+    color:brown;
+}
+
+td {
+    background-color:burlywood;
+}
