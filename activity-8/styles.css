@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family:sans-serif
+    min-height: 100vh;
+    margin: 0;
+    color: #454
+}
+
+
+header {
+    display: flex;
+    padding: 5px;
+    background-color: crimson;
+    border-bottom: solid 1px #000;
+    color: #efefef;
+}
+
+
+.header-title {
+    display: inline-block;
+}
+
+
+.header-menu {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: smaller;
+}
+
+
+#new-button {
+    padding: 8px 16px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+#new-button:hover {
+    background-color: #555;
+}
+
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+
+#display-content {
+    padding: 20px;
+}
+
+
+#modal-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+
+#modal-backdrop.visible {
+    display: block;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    padding: 10px;
+    background-color: #fff;
+    border: solid 1px #555;
+    z-index: 99999;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.modal.visible {
+    display: block;
+}
+
+
+#edit-title-text, #edit-content-text {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
