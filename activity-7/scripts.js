@@ -1,61 +1,61 @@
-var tasks =[];
+var tasks = [];
+
 var taskStatus = {
     active: 'active',
     completed: 'completed'
 };
 
-function Task (id, name, status) {
+function Task(id, name, status) {
     this.id = id;
     this.name = name;
     this.status = status;
 }
 
-function addTaskElement (task) {
-    var listEl = document.getElementById('sctive-list');
+function addTaskElement(task) {
+    var listEl = document.getElementById('active-list');
     var taskEl = document.createElement('li');
     var textEl = document.createTextNode(task.name);
 
     taskEl.setAttribute('id', task.id);
+
+    // adds text to "task" element
     taskEl.appendChild(textEl);
     listEl.appendChild(taskEl);
 }
-
-function addTask (event) {
+//click handler
+function addTask(event) {
     var inputEl = document.getElementById('input-task');
-    if (inputEl.value != '') {
+    if (inputEl.value !== '') {
+        //new tasks
         var id = 'item-' + tasks.length;
-        var task = new Task(id, inputEl.value, taskStatus.active);
-        tasks.push(task);
 
+        var task = new Task(id, inputEl.value, taskStatus.active);
+
+        tasks.push(task);
+        addTaskElement(task);
         inputEl.value = '';
     }
 }
 
-function completeTask (event) {
-    var taskEl + event.target;
+function completeTask(event) {
+    // gets task els
+    var taskEl = event.target;
     var id = taskEl.id;
 
-    for (var i = 0; i < tasks.length; i++) {
-        if (tasks[i].id === id) {
-            tasks[i].status = taskStatus.completed;
+    for (var e = 0; e < tasks.length; e++) {
+        if (tasks[e].id === id) {
+            tasks[e].status = taskStatus.completed;
             break;
         }
     }
 
     taskEl.remove();
-    document.getElementById('comlpeted-list').appendChild(taskEl);
+    document.getElementById('completed-list').appendChild(taskEl);
 }
 
-function clickButton (event) {
-    if (event.keyCode === 13) {
-        document.getElementById('add-task').click();
-    }
-}
-
-function init () {
+function init() {
     document.getElementById('add-task').onclick = addTask;
-    document.getElementById('active-list').onclick = completedTask;
-    document.getElementById('input-task').onkeypress = clickButton;
+    document.getElementById('active-list').onclick = completeTask;
 }
 
 init();

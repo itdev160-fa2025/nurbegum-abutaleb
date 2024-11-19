@@ -1,25 +1,25 @@
-body {
-    font-family: sans-serif;
-    margin: auto 30px;
-    color:honeydew;
+body{
+    font-family:sans-serif
+    margin: auto 40px;
+    color: white;
 }
 
-ul {
-    margin: 0;
+ul{
+margin: 0;
 }
 
-li {
-    padding: 5px;
+li{
+    padding: 5.5px;
 }
 
-#todo-list-container {
-    margin-top: 20px;
+#todo-list-container{
+margin-top: 20px;
 }
 
-#completed-list {
+#completed-list{
     list-style-type: none;
 }
 
-#comlpeted-list li {
+#completed-list li {
     text-decoration: line-through;
 }
