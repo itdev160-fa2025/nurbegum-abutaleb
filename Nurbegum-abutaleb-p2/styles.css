@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    color: brown;
+  }
+  
+  header {
+    background-color:burlywood;
+    color:blanchedalmond;
+    text-align: center;
+    padding: 3rem;
+  }
+  
+  main {
+    padding: 4rem;
+    max-width: 65000px;
+    margin: auto;
+  }
+  
+  section {
+    margin-bottom: 1.5rem;
+  }
+ 
+  footer {
+    background-color: blanchedalmond;
+    color:burlywood;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+  
+  
+  ul {
+    list-style-type: none;
+    padding: 1;
+  }
+  
+  ul li {
+    background-color: bisque;
+    padding: 2rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }

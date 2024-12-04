@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Traveller App</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Country Traveller App</h1>
+    <p>Lists of upcoming travel countries</p>
+  </header>
+  <main>
+    <section id="add-country">
+      <h2>Add a new country</h2>
+      <form id="country-form">
+        <label for="country-name">Country Name:</label>
+        <input type="text" id="country-name" required>
+        <label for="country-category">Category:</label>
+        <select id="country-category">
+          <option value="Turkiye">Turkiye Country</option>
+          <option value="Istanbul">City</option>
+          <option value="Ottoman Empire">Capital</option>
+        </select>
+        <button type="submit">Add Country</button>
+      </form>
+    </section>
+    <section id="country-list">
+      <h2>Country List</h2>
+      <ul id="countries"></ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Country Traveller App</p>
+  </footer>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
